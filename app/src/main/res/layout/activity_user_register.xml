@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF4FF"
+    tools:context=".Activitise.UserRegisterActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/applogo"
+                android:backgroundTint="@color/splashscreen" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_image"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapelogincontainer"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_boldnew"
+                    android:gravity="center"
+                    android:text="Register Now"
+                    android:textColor="#000000"
+                    android:textSize="28sp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/fullname_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/emailpassbg"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:hint="Full Name"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"></EditText>
+
+                <RelativeLayout
+                    android:id="@+id/phone_layoutcounryname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/emailpassbg">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.2"
+                        app:ccp_defaultNameCode="pk"
+                        app:ccp_textSize="18sp" />
+
+                    <View
+                        android:id="@+id/vertical_lineview"
+                        android:layout_width="2dp"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/ccp_name"
+                        android:background="@color/gray" />
+
+                    <EditText
+                        android:id="@+id/et_phonenumber_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/vertical_lineview"
+                        android:background="@null"
+                        android:hint="Enter Phone Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/emailpassbg"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:hint="Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"></EditText>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/userpwd_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/emailpassbg"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/password_signup_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:selectAllOnFocus="true"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/userpwdconfirm_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/emailpassbg"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/confirmpass_signup_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Confirm Password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:selectAllOnFocus="true"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnsignup_id"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/signinbtnshape"
+                    android:text="@string/SignUp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"></Button>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

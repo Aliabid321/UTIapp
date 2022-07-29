@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EEF4FF"
+    android:layout_height="match_parent"
+    tools:context=".Activitise.ShowCategoryActivity">
+    <include layout="@layout/customeactionbar" android:id="@+id/custome_actionbar_id"></include>
+    <ProgressBar
+        android:id="@+id/progressbar_browsecate"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    </ProgressBar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/showcategory_recler"
+        android:layout_below="@+id/custome_actionbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

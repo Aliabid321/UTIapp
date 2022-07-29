@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#EEF4FF"
+    android:layout_height="60dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/back_icon"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="#4F5B79"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:id="@+id/actionbar_text"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Add Record"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</LinearLayout>

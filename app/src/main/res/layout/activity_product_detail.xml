@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".Activitise.ProductDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#EEF4FF"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/actionbar_custome"
+            layout="@layout/customeactionbar"></include>
+
+        <ImageView
+            android:id="@+id/imageview_one"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/actionbar_custome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/addbtnrecord">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_one"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name_item"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/itembg"
+                android:hint="Title of Item"
+                android:paddingLeft="10dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/description_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:background="@drawable/itembg"
+                android:gravity="start"
+                android:hint="Describe what you are selling..."
+                android:paddingLeft="20dp"></EditText>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:background="@drawable/shapelocation_bg"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/addlocation"
+                    android:src="@drawable/ic_location"
+                    android:text="Add Location"></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Add Location"
+                    android:textColor="@color/white"
+                    android:paddingRight="5dp"
+                     android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/locationtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Location is......"
+                android:visibility="gone">
+
+            </TextView>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:id="@+id/btnvideo_add"
+                android:text="Add video Ads.">
+
+            </Button>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnsaverecord"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_saverecordbtn"
+            android:fontFamily="@font/montserrat_boldnew"
+            android:text="Save Record"
+            android:textColor="@color/white">
+
+        </Button>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "621444165505",
+    "project_id": "onlineprojects-5aade",
+    "storage_bucket": "onlineprojects-5aade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621444165505:android:fe11a2113ae86c581f4280",
+        "android_client_info": {
+          "package_name": "com.appybuilder.alioffical.myolxtypeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621444165505-l248i2s37fs2i8mndk726gs8pvka4274.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAytu2q8BQtLPbt1omqpNy-r58L7x0TswE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621444165505-l248i2s37fs2i8mndk726gs8pvka4274.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
